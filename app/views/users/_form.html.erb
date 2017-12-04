@@ -18,10 +18,19 @@
 
   <%= f.label :gender %>
   <center>
+    <%
+      female = ""
+      male = ""
+      if @user.gender == true
+        female = true
+      else
+        male = true
+      end
+    %>
     <%= f.label :male, "Male : " %>
-    <%= f.radio_button :gender, 0, checked: true, class: "form-control gender-radio" %>
+    <%= f.radio_button :gender, 0, checked: male, class: "form-control gender-radio" %>
     <%= f.label :female, "Female : " %>
-    <%= f.radio_button :gender, 1, class: "form-control gender-radio" %>
+    <%= f.radio_button :gender, 1, checked: female, class: "form-control gender-radio" %>
   </center>
 
   <%= f.label :address %>

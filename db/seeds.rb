@@ -1,5 +1,5 @@
-User.create!(name_user: "Tino ne",
-             email: "tinobia@gmail.com",
+User.create!(name_user: "Nguyen Thi Kieu Nuong",
+             email: "nuong14pt@gmail.com",
              tel: "01283755270",
              password: "tinobia112",
              password_confirmation: "tinobia112",

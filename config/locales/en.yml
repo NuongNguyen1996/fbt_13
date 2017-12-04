@@ -19,11 +19,20 @@ en:
       login: "Log in"
       title: "Book Your Travel"
       signout: "Sign out"
+      setting: "Settings"
+      button: "Search"
+      cat_tour_name: "Category Tour Name: "
     footer:
       about: "About Us"
       contact: "Contact"
       news: "News"
       sentence: A product was designed by Trung & Nuong
+      reach_us: "Reach Us"
+      addrress1: "23046 Three Notch Road California,"
+      addrress2: "MD 20619, USA"
+      phone: " (+0) 123-456-7890"
+      mail_to_my_email: "mailto:info@example.com"
+      my_email: "info@example.com"
   users:
     index:
       title: Book Your Tour
@@ -35,8 +44,19 @@ en:
       confirm: "Confirmation"
       button: "Create my account"
     edit:
-      update: "Update user"
+      update: "Update information"
       button: "Update"
+    show:
+      setting: "Settings"
+  tours:
+    index:
+      blog: "Blog"
+    search:
+      result_search: "Result Search"
+    tour:
+      read-more: "Read More"
+      booking-tour: "Booking Tour"
+      close: "Close"
   helpers:
     application_helper:
       basic_title: "Welcome to visit our website"
@@ -44,7 +64,7 @@ en:
     new:
       login: "Login"
       welcome: "Welcome back."
-      username: "Username"
+      email: "Email"
       password: "Password"
       login: "Login"
       forgetpassword: "Forgot password"
@@ -57,14 +77,26 @@ en:
       deleted: "User deleted"
       failed_to_delete: "Failed to delete user"
       not_found_user: "User was not be found"
+      success_update_user: "Update successful!!!"
+      fail_update_user: "Failed, update again :("
+      please_login: "Please log in."
     sessions_controller:
-      invalid-signin: "Invalid username or password"
+      invalid-signin: "Invalid email or password"
       notactive: "Account not activated. Check your email for the activation link."
       active: "Login successful"
     account_activations_controller:
       edit:
         success: "Account activated!"
         danger: "Invalid activation link"
+    tours_controller:
+      not_found_tour: "Not found tour which you are searching"
+      must_choose_a_cat: "You haven't choosed a category tour to search yet!!!"
+      no_tour: "There isn't a tour to show"
   users_mailer:
     account_activation:
       subject: "Account activation"
+  datetime:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%d %m %Y %H:%M:%s"
