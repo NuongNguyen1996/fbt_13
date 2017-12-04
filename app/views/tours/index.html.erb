@@ -1,0 +1,9 @@
+<div class="blog" id="blog">
+  <div class="container">
+    <h3 class="tittle"><%= t "blog"%></h3>
+    <% @tours.each do |tour| %>
+      <%= render tour %>
+    <% end %>
+    <%= will_paginate %>
+  </div>
+</div>

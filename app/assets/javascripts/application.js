@@ -21,3 +21,5 @@
 //= require sb-admin-2.min
 //= require turbolinks
 //= require dataTables/jquery.dataTables
+//= require_tree .
+//= require bootstrap-sprockets
