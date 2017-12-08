@@ -14,3 +14,5 @@
 //=require datatable
 //=require datetimepicker
 //=require main
+//= require jquery
+//= require bootstrap

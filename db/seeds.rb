@@ -30,3 +30,6 @@ User.create!(name_user: "tino",
                gender: gender,
                address: address)
 end
+
+CategoryTour.create!(name_category: "Trong nuoc")
+CategoryTour.create!(name_category: "Ngoai nuoc")

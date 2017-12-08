@@ -23,7 +23,7 @@
       </p>
     </div>
     <a href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal<%=tour.id%>"><%= t "read-more"%></a>
-    <%= link_to t(".booking-tour"), booking_request_new_path, :class => "blog-more-agile" %>
+    <%= link_to t(".booking-tour"), booking_request_path(id: tour.id), class: "blog-more-agile" %>
   </div>
   <div class="clearfix"></div>
 </div>
@@ -36,7 +36,11 @@
       </div>
       <hr>
       <div class="modal-body">
-        <%= image_tag tour.picture, :alt => "picture fails load " %>
+        <% if tour.picture.present? %>
+          <%= image_tag tour.picture, :alt => "picture fails load " %>
+      <% else %>
+          <%= image_tag t ".default_pic", :alt => "picture fails load " %>
+      <% end %>
       </div>
       <div class="modal-body">
         <p><%= tour.content %></p>

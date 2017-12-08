@@ -101,39 +101,6 @@ input[type=text]:focus {
 	top: 0;
 }
 
-.slider-img-w3layouts.one {
-	background: url(../images/bann1.jpg)no-repeat fixed;
-}
-
-.slider-img-w3layouts.two {
-	background: url(../images/bann2.jpg)no-repeat fixed;
-}
-
-.slider-img-w3layouts.three {
-	background: url(../images/bann3.jpg)no-repeat fixed;
-}
-
-.slider-img-w3layouts.one,
-.slider-img-w3layouts.two,
-.slider-img-w3layouts.three {
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	min-height: 795px;
-}
-
-.inn-banner {
-	background: url(../images/bann1.jpg)no-repeat fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	min-height: 250px;
-}
-
 .callbacks .caption {
 	display: block;
 	position: absolute;

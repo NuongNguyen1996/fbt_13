@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171201020017) do
+ActiveRecord::Schema.define(version: 20171212014836) do
 
   create_table "category_tours", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name_category"
@@ -64,10 +64,10 @@ ActiveRecord::Schema.define(version: 20171201020017) do
   create_table "tourdetails", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "tour_id"
     t.bigint "user_id"
-    t.integer "num_of_pass"
     t.integer "total_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "num_of_pass"
     t.index ["tour_id"], name: "index_tourdetails_on_tour_id"
     t.index ["user_id"], name: "index_tourdetails_on_user_id"
   end
@@ -84,6 +84,7 @@ ActiveRecord::Schema.define(version: 20171201020017) do
     t.bigint "category_tour_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "num_of_pass"
     t.index ["category_tour_id"], name: "index_tours_on_category_tour_id"
     t.index ["name_tour"], name: "index_tours_on_name_tour"
     t.index ["price"], name: "index_tours_on_price"

@@ -1,5 +1,5 @@
-<% provide :button_text, t(".button") %>
-<header class="navbar navbar-fixed-top navbar-default">
+<% provide :button_search, t(".button") %>
+<header class="navbar">
   <div class="container">
     <nav class="row">
       <div class="logo col-md-3" data-toggle="tooltip" data-placement="bottom" title="Booking Tours With Us!">
@@ -61,7 +61,7 @@
               <%= select_tag :p, options_from_collection_for_select(@cat_tours, :id, :name_category)%>
             </div>
             <div class="col-md-offset-10">
-              <%= submit_tag yield(:button_text), class: "btn btn-primary" %>
+              <%= submit_tag yield(:button_search), class: "btn btn-primary" %>
             </div>
           </div>
           <% end %>

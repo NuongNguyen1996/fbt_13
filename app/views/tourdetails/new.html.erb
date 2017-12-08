@@ -1,1 +1,37 @@
-<%= @current_user.name_user%>
+<div class = "new-tour">
+  <div class="container">
+    <h3 class="tittle"><%= t ".booking-online" %></h3>
+    <hr>
+    <h3><%= @tour.name_tour %></h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <% if @tour.picture.present? %>
+            <%= image_tag @tour.picture, :alt => "picture fails load", :class => "img-tour"%>
+        <% else %>
+            <%= image_tag t ".default_pic", :alt => "picture fails load", :class => "img-tour" %>
+        <% end %>
+      </div>
+      <div class="col-md-7">
+        <ul>
+          <li><p><i class="fa fa-forward"></i>&nbsp;Start time: <span><%= l @tour.starttime, format: :long%></span></p></li>
+          <li><p><i class="fa fa-forward"></i>&nbsp;End time: <span><%= l @tour.endtime, format: :long%></span></p></li>
+          <li><p><i class="fa fa-forward"></i>&nbsp;Price: <span id = "price"><%= @tour.price%></span></p></li>
+          <li>
+            <p><i class="fa fa-forward"></i>&nbsp;schedule:<span></p>
+            <pre><%=@tour.content%></pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="booking-tour">
+      <div class="row">
+        <div>
+          <%= render "book_tour" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -72,6 +72,12 @@ en:
       forgetpassword: "Forgot password"
       rememember_me: "Remember me on this computer"
       sign_up: "You aren't ready a member. Plase sign up now!"
+  tourdetails:
+    new:
+      booking-online: "Booking Online"
+      default_pic: "shin.jpg"
+    book_tour:
+      button: "Submit"
   controllers:
     users_controller:
       success: "Welcome to Ep Be Te"
@@ -95,6 +101,10 @@ en:
       not_found_tour: "Not found tour which you are searching"
       must_choose_a_cat: "You haven't choosed a category tour to search yet!!!"
       no_tour: "There isn't a tour to show"
+    tourdetails_controller:
+      booking_success: "You boooked successful. Happy a trip!!!"
+      booking_fail: "You haven't boooked successful. Please try again!!!"
+      please_sign_up: "You should register an account to continue booking"
   users_mailer:
     account_activation:
       subject: "Account activation"

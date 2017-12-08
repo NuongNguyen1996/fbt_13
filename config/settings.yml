@@ -19,3 +19,7 @@ sessions:
   default_check: 1
 tours:
   per_page: 5
+tourdetails:
+  book_tour:
+    minnum: 1
+    maxnum: 30
