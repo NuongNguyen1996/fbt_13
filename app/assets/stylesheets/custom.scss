@@ -281,3 +281,44 @@ footer{
   transition-duration: 0.5s;
   }
 }
+
+.login_page {
+  text-transform: capitalize;
+  line-height: 150%;
+  margin: 10px;
+}
+
+header{
+  .container{
+    background: $gray-medium-light;
+  }
+  ul li{
+    list-style: none;
+  }
+  .icon-side-bar{
+    margin-right: 10px;
+  }
+  .dropdown-user{
+  background: $gray-medium-light;
+  }
+  .login{
+  margin-top: 15px;
+  font-family: "Lobster";
+  font-size: 25px;
+  }
+  .menu-main{
+  font-family: "Lobster";
+  font-size: 15px;
+  }
+}
+
+footer{
+  .social-icon:hover{
+  transform: scale(1.1);
+  }
+
+  .social-icon:hover{
+  transform: scale(0.8);
+  transition-duration: 0.5s;
+  }
+}

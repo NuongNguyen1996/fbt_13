@@ -10,9 +10,6 @@ en:
   shared:
     error_messages:
       alert: The form contains %{errors}.
-  helpers:
-    application_helper:
-      title: "Framgia Booking Tour"
   admin:
     admin_header:
       users: "Users"
@@ -59,6 +56,22 @@ en:
       failed_to_delete: "Failed to delete Tour"
       not_found_tour: "Tour wasnt found"
       updated: Tour was updated
+      reach_us: "Reach Us"
+      addrress1: "23046 Three Notch Road California,"
+      addrress2: "MD 20619, USA"
+      phone: " (+0) 123-456-7890"
+      mail_to_my_email: "mailto:info@example.com"
+      my_email: "info@example.com"
+    application_controller:
+      please_login: Please login
+    sessions_controller:
+      invalid-signin: "Invalid email or password"
+      notactive: "Account not activated. Check your email for the activation link."
+      active: "Login successful"
+    account_activations_controller:
+      edit:
+        success: "Account activated!"
+        danger: "Invalid activation link"
   users:
     index:
       title: Book Your Tour
@@ -92,29 +105,6 @@ en:
       login: "Login"
       forgetpassword: "Forgot password"
       rememember_me: "Remember me on this computer"
-  controllers:
-    users_controller:
-      success: "Welcome to Ep Be Te"
-      updated: "Profile Updated"
-      login: "Please log in."
-      deleted: "User deleted"
-      failed_to_delete: "Failed to delete user"
-      not_found_user: "User was not be found"
-      success_update_user: "Update successful!!!"
-      fail_update_user: "Failed, update again :("
-      please_login: "Please log in."
-      not_correct_user: "Not correct user"
-      not_admin: Please login in Admin
-    application_controller:
-      please_login: Please login
-    sessions_controller:
-      invalid-signin: "Invalid email or password"
-      notactive: "Account not activated. Check your email for the activation link."
-      active: "Login successful"
-    account_activations_controller:
-      edit:
-        success: "Account activated!"
-        danger: "Invalid activation link"
   users_mailer:
     account_activation:
       subject: "Account activation"
@@ -137,3 +127,8 @@ en:
     edit:
       edit_tour: Edit Tour
       button: Change
+  datetime:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%d %m %Y %H:%M:%s"

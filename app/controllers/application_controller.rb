@@ -21,15 +21,4 @@ class ApplicationController < ActionController::Base
       end
     end
   end
-
-  def login_success
-    log_in @user
-    params[:session][:remember_me] == Settings.sessions.default_check ? remember(@user) : forget(@user)
-    remember @user
-    if @user.admin?
-      redirect_to users_path
-    else
-      redirect_to root_url
-    end
-  end
 end
