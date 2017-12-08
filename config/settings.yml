@@ -17,3 +17,5 @@ booking:
   url: https://www.booking.com/
 sessions:
   default_check: 1
+tours:
+  per_page: 5

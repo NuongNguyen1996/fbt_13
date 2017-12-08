@@ -20,11 +20,22 @@ en:
       title: "Book Your Travel"
       signout: "Sign out"
       setting: "Settings"
+      tours: "List Tours"
+      contact: "Contact"
+      hi: "Hi, "
+      button: "Search"
+      cat_tour_name: "Category Tour Name: "
     footer:
       about: "About Us"
       contact: "Contact"
       news: "News"
       sentence: A product was designed by Trung & Nuong
+      reach_us: "Reach Us"
+      addrress1: "23046 Three Notch Road California,"
+      addrress2: "MD 20619, USA"
+      phone: " (+0) 123-456-7890"
+      mail_to_my_email: "mailto:info@example.com"
+      my_email: "info@example.com"
   users:
     index:
       title: Book Your Tour
@@ -40,6 +51,14 @@ en:
       button: "Update"
     show:
       setting: "Settings"
+  tours:
+    index:
+      blog: "Blog"
+    tour:
+      read-more: "Read More"
+      booking-tour: "Booking Tour"
+      close: "Close"
+      default_pic: "shin.jpg"
   helpers:
     application_helper:
       basic_title: "Welcome to visit our website"
@@ -52,6 +71,7 @@ en:
       login: "Login"
       forgetpassword: "Forgot password"
       rememember_me: "Remember me on this computer"
+      sign_up: "You aren't ready a member. Plase sign up now!"
   controllers:
     users_controller:
       success: "Welcome to Ep Be Te"
@@ -71,6 +91,15 @@ en:
       edit:
         success: "Account activated!"
         danger: "Invalid activation link"
+    tours_controller:
+      not_found_tour: "Not found tour which you are searching"
+      must_choose_a_cat: "You haven't choosed a category tour to search yet!!!"
+      no_tour: "There isn't a tour to show"
   users_mailer:
     account_activation:
       subject: "Account activation"
+  datetime:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%d %m %Y %H:%M:%s"
