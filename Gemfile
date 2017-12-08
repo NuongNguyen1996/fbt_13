@@ -40,3 +40,4 @@ end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "pry-rails", "~> 0.3.4"
 gem "rubocop", require: false
+gem "autoprefixer-rails"
